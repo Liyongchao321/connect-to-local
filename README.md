@@ -1,3 +1,3 @@
-# connect-to-local
+# OOAD pracitce
 
-practice how to connect github to local git
+practice OOAD with python
