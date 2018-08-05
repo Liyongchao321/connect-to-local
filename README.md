@@ -1,3 +1,3 @@
 # OOAD pracitce
 
-practice OOAD with python
+practice using github and OOAD with python
