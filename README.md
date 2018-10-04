@@ -1,3 +1,3 @@
-# OOAD pracitce
+# Transfer some code
 
-practice using github and OOAD with python
+just for transfer some code
