@@ -1,2 +1,6 @@
 {
+    // "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    "python.venvFolders": [
+        "D:/git/py37env"
+      ],
 }
