@@ -1,20 +1,33 @@
-haystack = "hellollll"
-# needle = "lll"
-needle = ''
-n = len(haystack)
-m = len(needle)
-if m == 0:
-    print(0)
-l = n-m
-print(n,m,l)
-res = n
-for i in range(l+1):
-    # print(i)
-    # print(haystack[n-m-i:n-i]) 
-    if haystack[n-m-i:n-i] == needle:
-        res = n-m-i
+A='  123'
+B='  asd123'
+C='    -123asd'
+D=''
 
-if res == n:
-    print(-1)
+str=A
+str = str.lstrip()
+print(str)
+# if not str[1].isdigit():
+#     print('haha')
+if str == '':
+    print('heihei')
+i = 0
+sign = 1
+if str[0] == '-':
+    sign = -1
+    str = str[1:]
+elif str[0] == '+':
+    sign = 1
+    str = str[1:]
+if str == '':
+    print('heihei')
+while i < len(str) and str[i].isdigit():
+    i += 1
+ 
+if i == 0:
+    print('haha')
 else:
-    print(res)
+    str = str[:i]
+res = sign*int(str)
+res = -2147483648 if res<-2147483648 else res
+res = 2147483647 if res>2147483647 else res
+print(res)
