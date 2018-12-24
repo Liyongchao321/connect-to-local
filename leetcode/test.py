@@ -1,33 +1,14 @@
-A='  123'
-B='  asd123'
-C='    -123asd'
-D=''
+import socket
+# class Resolver:
+#     def __init__(self):
+#         self._cache = {}
+    
+#     def __call__(self, host):
+#         if host not in self._cache:
+#             self._cache[host] = socket.gethostbyname(host)
+#         return self._cache[host]
 
-str=A
-str = str.lstrip()
-print(str)
-# if not str[1].isdigit():
-#     print('haha')
-if str == '':
-    print('heihei')
-i = 0
-sign = 1
-if str[0] == '-':
-    sign = -1
-    str = str[1:]
-elif str[0] == '+':
-    sign = 1
-    str = str[1:]
-if str == '':
-    print('heihei')
-while i < len(str) and str[i].isdigit():
-    i += 1
- 
-if i == 0:
-    print('haha')
-else:
-    str = str[:i]
-res = sign*int(str)
-res = -2147483648 if res<-2147483648 else res
-res = 2147483647 if res>2147483647 else res
-print(res)
+if __name__ == '__main__':
+    A = ['a c', 'b b', 'c c']
+    B = sorted(A, key=lambda x:x.split()[-1])
+    print(B)
