@@ -1,2 +1,2 @@
-./py37env/*
-*__pycache__*
+py37env/
+__pycache__/
