@@ -55,8 +55,8 @@ class NYIngredientFactory(IngredientFactory):
             return ThickCrustDough(8)
         elif name == 'ThinCrustDough':
             return ThinCrustDough(4)
-    def create_sauce(self, name):
-        if name == 
+    # def create_sauce(self, name):
+    #     if name == 
 class PizzaStore(ABC):
     def __init__(self, ingredientfactory):
         self.ingredientfactory = InterruptedError

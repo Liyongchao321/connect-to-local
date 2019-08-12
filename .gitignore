@@ -1,4 +1,6 @@
 py37env/
+py36env/
 py35env/
 __pycache__/
 .vscode/
+*.pyc
