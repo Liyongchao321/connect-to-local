@@ -1,0 +1,36 @@
+digraph ObjectGraph {
+  node[shape=box, style=filled, fillcolor=white];
+  o1768168498160[fontcolor=red];
+  o1768168498160[label="dict\n1 items"];
+  o1768168498160[fillcolor="0,0,1"];
+  o1768168498160 -> o1768174891912 [label="k",weight=2];
+  o1768174891912[label="list\n3 items"];
+  o1768174891912[fillcolor="0,0,0.766667"];
+  o1768174891912 -> o1768171410040;
+  o1768174891912 -> o1768171409816;
+  o1768174891912 -> o1768171079328;
+  o1768171410040[label="Foo\n<__main__.Foo object at 0x0000019BAF3A92"];
+  o1768171410040[fillcolor="0,0,0.533333"];
+  o1768171410040 -> o1768174872904 [label="__dict__",weight=10];
+  o1768171410040 -> o1768169533592;
+  o1768171409816[label="Foo\n<__main__.Foo object at 0x0000019BAF3A91"];
+  o1768171409816[fillcolor="0,0,0.533333"];
+  o1768171409816 -> o1768171144752 [label="__dict__",weight=10];
+  o1768171409816 -> o1768169533592;
+  o1768171079328[label="Foo\n<__main__.Foo object at 0x0000019BAF3586"];
+  o1768171079328[fillcolor="0,0,0.533333"];
+  o1768171079328 -> o1768168498232 [label="__dict__",weight=10];
+  o1768171079328 -> o1768169533592;
+  o1768174872904[label="dict\n1 items"];
+  o1768174872904[fillcolor="0,0,0.3"];
+  o1768174872904[fontcolor=white];
+  o1768169533592[label="type\nFoo"];
+  o1768169533592[fillcolor="0,0,0.3"];
+  o1768169533592[fontcolor=white];
+  o1768171144752[label="dict\n1 items"];
+  o1768171144752[fillcolor="0,0,0.3"];
+  o1768171144752[fontcolor=white];
+  o1768168498232[label="dict\n1 items"];
+  o1768168498232[fillcolor="0,0,0.3"];
+  o1768168498232[fontcolor=white];
+}

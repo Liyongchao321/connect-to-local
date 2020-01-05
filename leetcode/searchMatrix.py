@@ -27,38 +27,34 @@ if matrix[0][0] > target:
     print(False)
     print(2)
     os._exit(0)
-a = len(matrix)
-b = len(matrix[0])
-for i in range(0, a):
-    if matrix[i][0]>target:
-        a = i+1
-        break
-for i in range(0, b):
-    if matrix[0][i]>target:
-        b = i+1
-        break
-l = min(a, b)
-print(a,b)
-m = 0
-for i in range(0,l):
-    if matrix[i][i] > target:
-        m = i
-        break
-print('m=',m)      
-print(11)
-for row in matrix[:m]:
-    print(row[:b])
-    if target in row[:b]:
-        print(True)
-        print(3)
-        os._exit(0)
-print(22)
-for row in matrix[m:a]:
-    print(row[:m])
-    if target in row[:m]:
-        print(True)
-        print(4)
-        os._exit(0)
+
+x = 0
+y = 0
+a = len(matrix[0])
+b = len(matrix)
+while True:
+    if x != a-1, y!= b-1:
+        if matrix[x][y] < target:
+            x = x+1
+        elif matrix[x][y]>target:
+            x = x-1
+    elif x=a-1 and y !=b-1:
+        if matrix[x][y+1] < target
+
+
+        if x+1>a and matrix[x][y+1]:
+            print('1',False)
+            os._exit(0)
+    elif matrix[x][y] > target:
+        x = x-1
+        y = y+1
+        if y>=b:
+            print('2', False)
+            os._exit(0)
+    else:
+        return True
+
+
 
 print(False)
 print(5)
